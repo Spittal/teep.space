@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teep Space</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<img src="./teep.png" class="teep">
+
+	<div id='title'><span>Happy Birthday Space Teep</span></div>
+
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+	
+	<script type="text/javascript">
+		var teep = document.querySelector('.teep');
+		document.addEventListener('mousemove', function(e) {
+			teep.style.left = e.clientX + 'px';
+			teep.style.top = e.clientY + 'px';
+		});
+	</script>
+</body>
+</html>
